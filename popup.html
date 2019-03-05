@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 20em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Sync</h1>
+    <div class="main">
+        <div class="subsection error"></div>
+        <div class="subsection uninit">Loading...</div>
+        <div class="subsection no-video">No videos were found on this page.</div>
+        <div class="subsection choose-video">
+            <div>Choose a video</div>
+            <div class="videos"></div>
+            <button>Submit</button>
+        </div>
+        <div class="subsection idle">
+            <div>Do you want to host or join a room?</div>
+            <div><button>Host</button></div>
+            <div><button>Join</button></div>
+            <div class="loading">Hosting new room...</div>
+        </div>
+        <div class="subsection join-room">
+            <div>Please enter the room id</div>
+            <div><input type="text" class="room-id"></div>
+            <div>
+                <button>Submit</button>
+                <!-- <button>Cancel</button> -->
+            </div>
+            <div class="loading">Joining room...</div>
+        </div>
+        <div class="subsection active-room">
+            <div>Video playback is being synced with <span>0</span> other users in this room</div>
+            <div>Share the room id <pre>NULL</pre> so others can join</div>
+            <button>Leave Room</button>
+            <div class="loading">Leaving room...</div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

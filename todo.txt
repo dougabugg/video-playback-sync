@@ -1,0 +1,4 @@
+things we need to do
+- look up nodejs package for websockets
+- learn more about writing web extensions
+- write a server for syncing video playback events between clients

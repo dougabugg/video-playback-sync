@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "Video Sync",
+    "version": "1.0",
+
+    "permissions": [
+        "<all_urls>"
+    ],
+
+    "description": "Syncs videos between devices",
+
+    "icons": {
+        "48": "icons/video-sync.svg"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "browser_action": {
+        "default_icon": "icons/video-sync.svg",
+        "default_title": "Video Sync",
+        "default_popup": "popup.html"
+    }
+}
